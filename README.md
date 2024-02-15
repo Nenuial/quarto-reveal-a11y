@@ -49,28 +49,6 @@ After (dynamically rendered code):
 </section>
 ```
 
-### Dynamic Skip Links / Table of Contents 
-
-This plugin only supports nesting of sections 2 levels deep. It injects a "Skip to Navigation" link at the beginning of the source order as well as an unordered list of slide links at the end. The content for those links is sourced from each slide: it grabs either the first child text node or the bare `textContent`. Various selectors for injected markup can be manipulated as options.
-
-Default options (modifiable in `plugin/accessibility/helper.js`):
-
-```javascript
-new SkipLinks({
-	enabled: true,
-
-	global_skip_link_id: 'global-skip-link',
-
-	slide_skip_links_id: 'table-of-contents',
-
-	global_skip_link_text: 'Show navigation',
-
-	skip_link_target_selector: '.accessibilityWrapper',
-
-	controls_selector: '.controls'
-})
-```
-
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).
